@@ -2,8 +2,11 @@ terraform {
   required_version = "> 0.12.0"
 
   backend "azurerm" {
-    features {}
   }
+}
+
+provider "azurerm" {
+  features {}
 }
 
 variable "resource_group_name" {
